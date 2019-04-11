@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>절대 배치</title>
+    <style>
+        div {
+            display: inline-block;
+            position: absolute;
+            /* 절대 배치 */
+            border: 30px solid transparent;
+            border-image: url ("media/b.jpg") 30 round;
+            width: 200px;
+            height: 200px;
+        }
+
+        div>p {
+            display: inline-block;
+            /* div의 자식 p */
+            position: absolute;
+            /* 절대 배치 */
+            height: 20px;
+            width: 15px;
+            background: lightgray;
+
+        }
+
+        div>p2 {
+            display: inline-block;
+            /* div의 자식 p */
+            position: absolute;
+            /* 절대 배치 */
+            height: 20px;
+            width: 15px;
+            background: lightblue;
+
+        }
+
+        div>p3 {
+            display: inline-block;
+            /* div의 자식 p */
+            position: absolute;
+            /* 절대 배치 */
+            height: 20px;
+            width: 15px;
+            background: lightgreen;
+
+        }
+
+        div>p4 {
+            display: inline-block;
+            /* div의 자식 p */
+            position: absolute;
+            /* 절대 배치 */
+            height: 20px;
+            width: 15px;
+            background: red;
+
+        }
+
+        div>p5 {
+            display: inline-block;
+            /* div의 자식 p */
+            position: absolute;
+            /* 절대 배치 */
+            height: 20px;
+            width: 15px;
+            background: brown;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3>Merry Christmas!</h3>
+    <hr>
+    <p style="background: lightblue",>merry.christmas</p>
+    <div>
+        <img src="media/christmastree.png" width="200" height="200" alt="크리스마스 트리">
+        <p style="left:50px; top:30px">M</p>
+        <p style="left:50px; top:200px;background : yellow;height : 20px;
+width : 110px;">hm27이한글</p>
+        <p2 style="left:100px; top:0px">E</p2>
+        <p3 style="left:100px; top:80px">R</p3>
+        <p4 style="left:150px; top:110px">R</p4>
+        <p5 style="left:30px; top:130px">Y</p5>
+    </div>
+</body>
+
+</html>
