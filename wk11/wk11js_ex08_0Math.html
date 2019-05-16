@@ -4,7 +4,7 @@
   <head>
     <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
     <meta charset="utf-8" />
-    <title>hmnn : Javascript object</title>
+    <title>hm27 : Javascript object</title>
     <style></style>
     <script></script>
   </head>
@@ -15,15 +15,13 @@
     <hr />
     <script>
       var sq = Math.sqrt(4); // 4의 제곱근을 구하면 2
-      //document.write("sqrt(4) = " + sq + "<br>");
+      document.write("sqrt(4) = " + sq + "<br>");
       var area = Math.PI * 2 * 2; // 반지름이 2인 원의 면적
-      //document.write("반지름이 2인 원의 면적 = " + area + "<br><br>");
-
+      document.write("반지름이 2인 원의 면적 = " + area + "<br><br>");
       // 0~99까지 랜덤한 정수를 10개 만드는 코드
-      //document.write("0~99까지 랜덤한 정수를 10개 만들어보자" + "<br>");
-
-      for (i = 0; i < 10; i++) {
-        var m = Math.random() * 100; // m은 0~99.999... 보다 작은 실수 난수
+      document.write("0~99까지 랜덤한 정수를 10개 만들어보자" + "<br>");
+      for (i = 0; i < 6; i++) {
+        var m = Math.random() * 45 + 1; // m은 0~99.999... 보다 작은 실수 난수
         var n = Math.floor(m); // m에서 소수점 이하를 제거한 정수(0~99사이)
         document.write(n + " ");
       }
