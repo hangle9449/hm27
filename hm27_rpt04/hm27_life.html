@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>my info</title>
+    <script>
+            function change() {
+            var spanArray = document.getElementsByTagName("span");
+            for(var i=0; i<spanArray.length; i++) {
+            var span = spanArray[i];
+            span.style.color = "orchid";
+            span.style.fontSize = "20px";
+            }
+            }
+            </script>
+</head>
+
+<body style="background-color: lightgray">
+    <h4>
+            <h3>오늘 내가 한일
+                    <button onclick="change()">누르세요</button>
+                    </h3>
+                    <hr>
+                    오늘 9시에 <span>기상</span>을 하고 9시30분에<span>샤워</span>를 했다. 그리고 <br>
+                    10시부터 <span>아침식사</span>를 하고 <span>등교</span>를 시작했다. 버스를 타기위해서 <br>
+                    버스정류장으로 가니 귀엽게 생긴 아기고양이가 있었다. 고양이가 귀여워서 쓰다듬었다. 11시40분<br>
+                    <span>학교에 도착</span>을 하니 너무 더웠다. 12시에 <span>점심</span>을 먹고, 1시에 <span>수업을</span><br>
+                    듣고 나니5시였다. <span>하교</span>를 하기위해 <span>셔틀버스</span>를타고 집에 도착하니 7시였다. <br>
+                    집에 도착하고 <span>저녁</span>을 먹고나니8시였다. 8시부터 <span>컴퓨터 게임</span>을 하고 10시에 <span>취침</span><br>
+                    했다.
+    </h4>
+</body></html>

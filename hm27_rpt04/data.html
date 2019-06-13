@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8">
+    <title>hm27 : 데이터 목록을 가진 텍스트 입력</title>
+    <style>
+    </style>
+    <script></script>
+</head>
+
+<body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3 style ="font-size:100" "color:skyblue" >좋아하는 게임</h3>
+    <hr>
+    <form style =" background-color: lightgray">
+        좋아하는 게임 : <input type="text" list="countries"><br>
+        <datalist id="countries">
+            <option value="리그오브레전드" >
+            <option value="스타크래프트2">
+            <option value="뿌요뿌요테트리스">
+        </datalist>
+        
+      <ul>
+           <fieldset ><legend> 게임관련정보</legend>
+						<li>
+                            
+                            <a href="javascript:alert('3개중에 첫번째로 제일좋아하는게임!!')">리그오브레전드</a>
+                            <a target="myframe"  href="lol.html" >=>게임관련자료</a>
+                            
+						</li>
+						<li>
+                                <a href="javascript:alert('3개중에 두번째로 제일좋아하는게임!!')">스타크래프트2</a>
+							<a href="scs2.html" target="myframe">=>게임관련자료</a></li>
+          <li>
+                <a href="javascript:alert('3개중에 세번째로 제일좋아하는게임!!')">뿌요뿌요테트리스</a>
+							<a href="pyopyo.html" target="myframe">=>게임관련자료</a></li>
+          </fieldset>
+					</ul>
+    </form>
+
+</body>
+
+</html>

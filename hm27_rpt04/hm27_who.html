@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>my info</title>
+    <script>
+            // 미리 로딩해둘 이미지 이름 배열
+            var files = [
+              "media/샴1.jpg",
+              "media/샴2.jpg",
+              "media/샴3.jpg",
+              
+              "media/샴4.jpg",
+                  
+            ];
+            var imgs = new Array();
+            for (var i = 0;i<files.length; i++) {
+              imgs[i] = new Image(); // 메모리에 이미지 객체 생성
+              imgs[i].src = files[i]; // 이미지 로딩
+            }
+            var next = 1;
+            function change(img){
+              img.src=imgs[next].src;//이미지 변경
+              var nameSplit = files[next].split('/');
+              var nameText = document.getElementById("name");
+              var sizeText = document.getElementById("size");
+              nameText.innerHTML="이미지 이름 : "+nameSplit[1];//이미지 객체의 프로퍼티 출력
+              sizeText.innerHTML="폭 : "+img.width+"높이"+img.height;
+              next++;
+              next%=imgs.length;
+            }
+            function init(img){
+              var nameSplit=files[next-1].split('/');
+              var nameText=document.getElementById("name");
+              var sizeText=document.getElementById("size");
+              img.src=files[next-1];
+              nameText.innerHTML="이미지 이름 : "+nameSplit[1];//이벤트 객체의 프로퍼티 출력
+              sizeText.innerHTML="쭉 : "+img.width+"높이 : "+img.height;
+            }
+          </script>
+    <sytle>
+		
+			</sytle>
+</head>
+
+<body>
+    <h4 style="background-color: lightgray" >
+      <fieldset >
+        이름 : 이한글<br>
+        나이 : 21<br>
+        ID : hangle9449<br>
+        연락처 : 010-4805-9459<br>
+        혈액형 : b형<br>
+        e-mail : hangle9449@naver.com<br>
+        학교 : 인제대학교<br><br><br>
+        </fieldset>
+        <fieldset >
+            나의 고양이<br>
+            이름 : 샤샤<br>
+            나이 : 16<br>
+            종 : 샴<br>
+        
+        <p>
+                <img
+                  style="border:20px ridge wheat"
+                  src="media/샴1.jpg"
+                  alt="."
+                  width=size
+                  height=size
+                  onclick="change(this)"
+                  onload="init(this)"
+                />
+              </p>
+              <p id="size"></p>
+              <p id="name"></p>
+    </h4>
+</fieldset>
+</body>
+
+</html>
